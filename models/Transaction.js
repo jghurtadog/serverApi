@@ -11,7 +11,7 @@ const TransactionSchema = mongoose.Schema({
     trim: true,
   },
   value: {
-    type: Decimal128,
+    type: Number,
     require: true,
   },
   concept: {
