@@ -6,6 +6,10 @@ const ClassificationSchema = mongoose.Schema({
     require: true,
     trim: true,
   },
+  category: {
+    type: String,
+    trim: true,
+  },
   description: {
     type: String,
     require: true,
