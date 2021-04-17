@@ -18,6 +18,7 @@ app.use("/api/projects", require("./routes/projects"));
 app.use("/api/tasks", require("./routes/tasks"));
 app.use("/api/notes", require("./routes/notes"));
 app.use("/api/transactions", require("./routes/transactions"));
+app.use("/api/classifications", require("./routes/classifications"));
 
 app.listen(port, "0.0.0.0", () => {
   console.log(`El servidor esta funcionando en el puesto ${port}`);
