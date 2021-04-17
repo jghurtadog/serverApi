@@ -19,7 +19,7 @@ exports.createClassification = async (req, res) => {
 
 exports.getClassificationsByType = async (req, res) => {
   try {
-    const classifications = await Classification.find({ type: req.user.id });
+    const classifications = await Classification.find({ type: req.params.type });
     res.json({ classifications });
   } catch (error) {
     console.log(error);

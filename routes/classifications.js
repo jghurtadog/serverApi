@@ -14,6 +14,6 @@ router.post(
   classificationController.createClassification
 );
 
-router.get("/", auth, classificationController.getClassificationsByType);
+router.get("/:type", auth, classificationController.getClassificationsByType);
 
 module.exports = router;
