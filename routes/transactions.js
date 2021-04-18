@@ -12,6 +12,7 @@ router.post(
     check("value", "El valor de la transaccion es obligatorio").not().isEmpty(),
     check("concept", "El concepto es obligatorio").not().isEmpty(),
     check("type", "El tipo de transaccion es obligatorio").not().isEmpty(),
+    check("classificationId", "La clasificacion es obligatorio").not().isEmpty(),
   ],
   auth,
   transactionController.createTransaction

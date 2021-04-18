@@ -28,9 +28,9 @@ const TransactionSchema = mongoose.Schema({
     require: true,
     trim: true,
   },
-  classification: {
-    type: String,
-    trim: true,
+  classificationId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Classification",
   },
   creater: {
     type: mongoose.Schema.Types.ObjectId,
